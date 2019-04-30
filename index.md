@@ -3,14 +3,14 @@
 Это сайт Айзааны. Окончила [ММФ НГУ](https://www.nsu.ru/n/mathematics-mechanics-department).
 
 
-### Markdown
+### Проекты
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
 Syntax highlighted code block
 
-# Header 1
+# [Мишка](https://ayzaana.github.io/misha/)
 ## Header 2
 ### Header 3
 
