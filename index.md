@@ -1,6 +1,6 @@
 ## Привет!
 
-Это сайт Айзааны. Окончила [ММФ НГУ](https://www.nsu.ru/n/mathematics-mechanics-department/).
+Это сайт Айзааны. Окончила [ММФ НГУ](https://www.nsu.ru/n/mathematics-mechanics-department).
 You can use the [editor on GitHub](https://github.com/Ayzaana/Ayzaana.githab.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
