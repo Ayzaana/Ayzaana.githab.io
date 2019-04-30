@@ -10,14 +10,14 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 ```markdown
 Syntax highlighted code block
 
-# [Мишка](https://ayzaana.github.io/misha)
+# Header 1
 ## Header 2
 ### Header 3
 
 - Bulleted
 - List
 
-1. Numbered
+1. [Мишка](https://ayzaana.github.io/misha)
 2. List
 
 **Bold** and _Italic_ and `Code` text
