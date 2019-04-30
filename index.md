@@ -10,7 +10,7 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 ```markdown
 Syntax highlighted code block
 
-# [Мишка](https://ayzaana.github.io/misha/)
+# [Мишка](https://ayzaana.github.io/misha)
 ## Header 2
 ### Header 3
 
