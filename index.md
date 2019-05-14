@@ -17,9 +17,9 @@ Syntax highlighted code block
 - Bulleted
 - List
 
-1. [Мишка](https://ayzaana.github.io/misha)
-2. [Треугольник Серпинского](https://ayzaana.github.io/The_Sierpinski_triangle/).
-3. [Пинг-понг(клавиатура)](https://ayzaana.github.io/pingpong/).
+[Мишка](https://ayzaana.github.io/misha)
+[Треугольник Серпинского](https://ayzaana.github.io/The_Sierpinski_triangle/).
+[Пинг-понг(клавиатура)](https://ayzaana.github.io/pingpong/).
 
 **Bold** and _Italic_ and `Code` text
 
