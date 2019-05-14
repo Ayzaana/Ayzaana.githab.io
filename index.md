@@ -8,7 +8,7 @@
 Ниже можно посмотреть часть проектов.
 
 ```markdown
-Syntax highlighted code block
+'''Syntax highlighted code block
 
 # Мишка
 ## Треугольник Серпинского
