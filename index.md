@@ -2,14 +2,14 @@
 
 Это сайт Айзааны. 
 *Окончила [ММФ НГУ](https://www.nsu.ru/n/mathematics-mechanics-department).*
-`Окончила [ММФ НГУ](https://www.nsu.ru/n/mathematics-mechanics-department).`
+
 
 
 ### Проекты
 
- - [Мишка](https://ayzaana.github.io/misha),
+` - [Мишка](https://ayzaana.github.io/misha),
 
  - [Треугольник Серпинского](https://ayzaana.github.io/The_Sierpinski_triangle/),
  
- - [Пинг-понг(клавиатура)](https://ayzaana.github.io/pingpong/).
+ - [Пинг-понг(клавиатура)](https://ayzaana.github.io/pingpong/).`
 
