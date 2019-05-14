@@ -10,5 +10,5 @@
 
  - [Треугольник Серпинского](https://ayzaana.github.io/The_Sierpinski_triangle/),
  
-  - [Пинг-понг(клавиатура)](https://ayzaana.github.io/pingpong/).
+ - [Пинг-понг(клавиатура)](https://ayzaana.github.io/pingpong/).
 
