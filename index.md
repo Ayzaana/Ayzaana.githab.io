@@ -5,21 +5,21 @@
 
 ### Проекты
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Ниже можно посмотреть часть проектов.
 
 ```markdown
 Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+# Мишка
+## Треугольник Серпинского
+### Пинг-понг(клавиатура)
 
 - Bulleted
 - List
 
 1. [Мишка](https://ayzaana.github.io/misha)
 2. [Треугольник Серпинского](https://ayzaana.github.io/The_Sierpinski_triangle/).
-3. [Пинг-понг](https://ayzaana.github.io/pingpong/).
+3. [Пинг-понг(клавиатура)](https://ayzaana.github.io/pingpong/).
 
 **Bold** and _Italic_ and `Code` text
 
