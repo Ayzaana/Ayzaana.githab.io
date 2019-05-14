@@ -1,6 +1,7 @@
 ## Привет!
 
-Это сайт Айзааны. Окончила [ММФ НГУ](https://www.nsu.ru/n/mathematics-mechanics-department).
+Это сайт Айзааны. 
+'''Окончила [ММФ НГУ](https://www.nsu.ru/n/mathematics-mechanics-department).
 
 
 ### Проекты
