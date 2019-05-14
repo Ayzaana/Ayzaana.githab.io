@@ -8,7 +8,7 @@
 ### Проекты
 
  - [Мишка](https://ayzaana.github.io/misha),
- - [Треугольник Серпинского](https://ayzaana.github.io/The_Sierpinski_triangle/),
  - [Пинг-понг(клавиатура)](https://ayzaana.github.io/pingpong/),
- - [ПТреугольник Серпинского с параметрами](https://ayzaana.github.io/The_Sierpinski_triangle_2/).
+ - [Треугольник Серпинского](https://ayzaana.github.io/The_Sierpinski_triangle/),
+ - [Треугольник Серпинского с параметрами](https://ayzaana.github.io/The_Sierpinski_triangle_2/).
 
