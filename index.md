@@ -18,7 +18,8 @@ Syntax highlighted code block
 - List
 
 1. [Мишка](https://ayzaana.github.io/misha)
-2. List
+2. [Треугольник Серпинского](https://ayzaana.github.io/The_Sierpinski_triangle/).
+3. [Пинг-понг](https://ayzaana.github.io/pingpong/).
 
 **Bold** and _Italic_ and `Code` text
 
