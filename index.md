@@ -5,6 +5,10 @@
 
 ### Проекты
 
+[Мишка](https://ayzaana.github.io/misha)
+[Треугольник Серпинского](https://ayzaana.github.io/The_Sierpinski_triangle/).
+[Пинг-понг(клавиатура)](https://ayzaana.github.io/pingpong/).
+
 Ниже можно посмотреть часть проектов.
 
 ```markdown
@@ -15,10 +19,6 @@
 
 - Bulleted
 - List
-
-[Мишка](https://ayzaana.github.io/misha)
-[Треугольник Серпинского](https://ayzaana.github.io/The_Sierpinski_triangle/).
-[Пинг-понг(клавиатура)](https://ayzaana.github.io/pingpong/).
 
 **Bold** and _Italic_ and `Code` text
 
