@@ -203,7 +203,7 @@ if(vkl) {
   }	 */
 	
 	if(item=='банан') {
-  image(img1, 650, 200, 300, 300);
+  image(img1, 650, 400, 300, 300);
 	//банан
 	for (let index = 0; index < data.length; index++) {
 	sensor.push(data[index].banana);
