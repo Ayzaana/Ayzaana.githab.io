@@ -223,7 +223,7 @@ noFill();
     }
   else 	if(item=='мандарин') {
 	//мандарин
-	  image(img2, 500, 100, 300, 300);
+	  image(img2, 500, 100, 500, 400);
 		for (let index = 0; index < data.length; index++) {
 	sensor2.push(data[index].mandarin);
     }
