@@ -146,7 +146,7 @@ mandarin:	205760},
 mandarin:	21972}];
 
 function setup() {
-	createCanvas(windowWidth, windowHeight);
+	createCanvas(1400, 600);
 	//background(100);
 	  bananacolor = color( 300,400,100);
   mandarincolor = color( 250,0,0);
@@ -161,8 +161,8 @@ function draw() {
 
 if(vkl) {
 //РИСУНОК КООРДИНАТ
-  cupline(height-110);
-  cupnum (height-110);
+  cupline(600-110);
+  cupnum (600-110);
   pplline(70);
   pplnum (70);
 	
@@ -176,21 +176,21 @@ if(vkl) {
   	text("2\n0\n1\n8\n \nГ\nО\nД", 20, 390);
 
 	pop();
-  text("НОМЕР НЕДЕЛИ", windowWidth/2, windowHeight-30);
+  text("НОМЕР НЕДЕЛИ", 1400/2, 600-30);
 	
 	//НАДПИСИ В ПРАВОМ ВЕРХНЕМ УГЛУ
 	  stroke(0);
   strokeWeight(1);
   fill(bananacolor);
-  rect(windowWidth-200, 20, 20, 20);
+  rect(1400-200, 20, 20, 20);
   fill(mandarincolor);
-  rect(windowWidth-200, 50, 20, 20);
+  rect(1400-200, 50, 20, 20);
 	
 		  //key
   noStroke();
   fill(0);
-  text("= Банан", windowWidth-170, 35);
-  text("= Мандарин", windowWidth-170, 65);
+  text("= Банан", 1400-170, 35);
+  text("= Мандарин", 1400-170, 65);
 	
 	//РИСУНОК ДИАГРАММЫ(СТОЛБЫ)
 	 // noStroke();
@@ -203,7 +203,7 @@ if(vkl) {
   }	 */
 	
 	if(item=='банан') {
-  image(img1, 650, 50, 300, 300);
+  image(img1, 750, 50, 300, 300);
 	//банан
 	for (let index = 0; index < data.length; index++) {
 	sensor.push(data[index].banana);
@@ -215,7 +215,7 @@ noFill();
 	stroke(bananacolor);
 	strokeWeight(5); // толщина линии 4 (стандартная 1)
 	for(let i=0;i<data.length; i++) { // прохожу по всем элементам массива
-		vertex(113+i*23, height-90-40*(sensor[i]/20000));
+		vertex(113+i*23, 600-90-40*(sensor[i]/20000));
 		endShape();
 	}
 	pop();
@@ -223,7 +223,7 @@ noFill();
     }
   else 	if(item=='мандарин') {
 	//мандарин
-	  image(img2, 500, 100, 500, 400);
+	  image(img2, 500, 100, 400, 300);
 		for (let index = 0; index < data.length; index++) {
 	sensor2.push(data[index].mandarin);
     }
@@ -234,7 +234,7 @@ noFill();
 	stroke(mandarincolor);
 	strokeWeight(5); // толщина линии 4 (стандартная 1)
 	for(let i=0;i<data.length; i++) { // прохожу по всем элементам массива
-		vertex(113+i*23, height-90-40*(sensor2[i]/20000));
+		vertex(113+i*23, 600-90-40*(sensor2[i]/20000));
 		endShape();
 	}
 	pop();
@@ -252,7 +252,7 @@ noFill();
 	stroke(bananacolor);
 	strokeWeight(5); // толщина линии 4 (стандартная 1)
 	for(let i=0;i<data.length; i++) { // прохожу по всем элементам массива
-		vertex(113+i*23, height-90-40*(sensor[i]/20000));
+		vertex(113+i*23, 600-90-40*(sensor[i]/20000));
 		endShape();
 	}
 	pop();
@@ -270,7 +270,7 @@ noFill();
 	stroke(mandarincolor);
 	strokeWeight(5); // толщина линии 4 (стандартная 1)
 	for(let i=0;i<data.length; i++) { // прохожу по всем элементам массива
-		vertex(113+i*23, height-90-40*(sensor2[i]/20000));
+		vertex(113+i*23, 600-90-40*(sensor2[i]/20000));
 		endShape();
 	}
 	pop();
@@ -282,7 +282,7 @@ noFill();
 function cupline (ypos) {
   stroke(0);
   strokeWeight(4);
-  for( let x = 90; x < windowWidth; x += 23){
+  for( let x = 90; x < 1400; x += 23){
     line(x, ypos+20, x, ypos+40);
 		 strokeWeight(1);
 		line(90, ypos+20, 2000, ypos+20);
@@ -292,7 +292,7 @@ function cupline (ypos) {
 function cupnum (ypos) {
   stroke(0);
   strokeWeight(4);
-  for( var y = 90, n=0; y < windowWidth; y += 46, n++){
+  for( var y = 90, n=0; y < 1400; y += 46, n++){
     strokeWeight(4);
     line(y, ypos, y, ypos+40);
     noStroke();
@@ -303,7 +303,7 @@ function cupnum (ypos) {
 function pplline (ypos) {
   stroke(0);
   strokeWeight(4);
-  for( var y = windowHeight-90; y > 0; y -= 40){
+  for( var y = 600-90; y > 0; y -= 40){
     line(ypos, y, ypos+40, y);
 		  strokeWeight(1);
 		line(ypos+20,500,ypos+20, -500);
@@ -313,7 +313,7 @@ function pplline (ypos) {
 function pplnum (ypos) {
   stroke(0);
   strokeWeight(4);
-  for( var y = windowHeight-90, n=0; y > 0; y -= 40, n++){
+  for( var y = 600-90, n=0; y > 0; y -= 40, n++){
     strokeWeight(4);
     line(ypos, y, ypos+40, y);
     noStroke();
