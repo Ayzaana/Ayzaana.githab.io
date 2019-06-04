@@ -6,9 +6,13 @@ let ind1=0;
 let ind2=0;
 let ind3=0;
 let ind4=0;
+let in1=0;
 
 let sensor = []; 
 let sensor2 = []; 
+
+let sensor3 = []; 
+let sensor4 = []; 
 
 function preload() {
   img1 = loadImage('banana.jpg'); // имя файла
@@ -227,8 +231,11 @@ if(vkl) {
   rect(140+i*80, creamht-data[i].mandarin*50, 30, data[i].mandarin*50);
   }	 */
 	
+  //let sensor=null;
+  
 	if(item=='банан') {
-//РИСУНОК КООРДИНАТ
+
+      //РИСУНОК КООРДИНАТ
   cupline(600-110);
   cupnum (600-110);
   pplline(70);
@@ -265,20 +272,22 @@ if(vkl) {
 	/*for (let index = 0; index < data.length; index++) {
 	sensor.push(data[index].banana);
     }*/
-      		if(ind1 < data.length) {
-	sensor.push(data[ind1].banana);
+     		if(ind1 < data.length) {
+	sensor[ind1]=data[ind1].banana;
 			ind1++;
     }
+ 
 
 	beginShape();
-		push();
-noFill(); 
+	push();
+    noFill(); 
 	stroke(bananacolor);
 	strokeWeight(5); // толщина линии 4 (стандартная 1)
 	for(let i=0;i<data.length; i++) { // прохожу по всем элементам массива
 		vertex(113+i*23, 600-90-40*(sensor[i]/20000));
 		endShape();
 	}
+    
 	pop();
 	
     }
@@ -321,8 +330,12 @@ noFill();
 	sensor2.push(data[index].mandarin);
     }*/
     
-    		if(ind2 < data.length) {
+    	/*	if(ind2 < data.length) {
 	sensor2.push(data[ind2].mandarin);
+			ind2++;
+    }*/
+        		if(ind2 < data.length) {
+	sensor2[ind2]=data[ind2].mandarin;
 			ind2++;
     }
 
@@ -375,8 +388,8 @@ noFill();
 	/*for (let index = 0; index < data.length; index++) {
 	sensor.push(data[index].banana);
     }*/
-          		if(ind3 < data.length) {
-	sensor.push(data[ind3].banana);
+         		if(ind3 < data.length) {
+	sensor3[ind3]=data[ind3].banana;
 			ind3++;
     }
 
@@ -386,7 +399,7 @@ noFill();
 	stroke(bananacolor);
 	strokeWeight(5); // толщина линии 4 (стандартная 1)
 	for(let i=0;i<data.length; i++) { // прохожу по всем элементам массива
-		vertex(113+i*23, 600-90-40*(sensor[i]/20000));
+		vertex(113+i*23, 600-90-40*(sensor3[i]/20000));
 		endShape();
 	}
 	pop();
@@ -397,8 +410,8 @@ noFill();
 		/*for (let index = 0; index < data.length; index++) {
 	sensor2.push(data[index].mandarin);
     }*/
-        		if(ind4 < data.length) {
-	sensor2.push(data[ind4].mandarin);
+      		if(ind4 < data.length) {
+	sensor4[ind4]=data[ind4].mandarin;
 			ind4++;
     }
 
@@ -408,7 +421,7 @@ noFill();
 	stroke(mandarincolor);
 	strokeWeight(5); // толщина линии 4 (стандартная 1)
 	for(let i=0;i<data.length; i++) { // прохожу по всем элементам массива
-		vertex(113+i*23, 600-90-40*(sensor2[i]/20000));
+		vertex(113+i*23, 600-90-40*(sensor4[i]/20000));
 		endShape();
 	}
 	pop();
@@ -427,7 +440,7 @@ strokeWeight(1);
 fill("black");
 //textSize(30);
 text(data1[j].percent, data1[j].x, data1[j].y);
-text("Соотношение проданных фруктов и овощей за 2018 год(учтены данные в рублях)", 200, 50);	
+text("Соотношение продаж фруктов и овощей за 2018 год", 200, 50);	
 fill(data1[j].color);
 rect(1400-200, 20+30*j, 20, 20);
 noStroke();
@@ -492,6 +505,15 @@ function start() {
 }
 
 function refresh(){
+  	 background(255); 
+  sensor.splice(0,6);
+  sensor2.splice(0,6);
+  sensor3.splice(0,6);
+  sensor4.splice(0,6);
+    ind1=0;
+    ind2=0;
+    ind3=0;
+    ind4=0;
   OutText.innerHTML = vvod.value;
-    item = vvod.value; // то сделать диаметр равным этому числу
+    item = vvod.value; 
 }
