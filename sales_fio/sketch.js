@@ -427,7 +427,7 @@ strokeWeight(1);
 fill("black");
 //textSize(30);
 text(data1[j].percent, data1[j].x, data1[j].y);
-text("Соотношение продаж фруктов и овощей за 2018 год", 200, 50);	
+text("Соотношение проданных фруктов и овощей за 2018 год(учтены данные в рублях)", 200, 50);	
 fill(data1[j].color);
 rect(1400-200, 20+30*j, 20, 20);
 noStroke();
