@@ -145,6 +145,58 @@ mandarin:	205760},
 {banana:	13576,
 mandarin:	21972}];
 
+let data1 = [{
+	name: "Яблоки",
+	percent: "20%",
+	angle1: 0,
+	angle2: 73,
+	x: 800,
+	y: 200,
+	color: "lime"},
+
+{name: "Бананы",
+	percent: "13%",
+	angle1: 73,
+	angle2: 119,
+	x: 650,
+	y: 150,
+	color: "yellow"
+},
+{name: "Огурцы",
+	percent: "11%",
+	angle1: 119,
+	angle2: 160,
+	x: 550,
+	y: 200,
+	color: "green"
+},
+						 
+{name: "Томаты",
+	percent: "9%",
+	angle1: 160,
+	angle2: 192,
+	x: 500,
+	y: 300,
+	color: "red"
+},
+{name: "Мандарин",
+	percent: "8%",
+	angle1: 192,
+	angle2: 220,
+	x: 550,
+	y: 380,
+	color: "orange"
+},
+{name: "Остальное",
+	percent: "39%",
+	angle1: 220,
+	angle2: 360,
+	x: 700,
+	y: 420,
+	color: "blue"
+}	];
+
+
 function setup() {
 	createCanvas(1400, 600);
 	//background(100);
@@ -160,6 +212,18 @@ function draw() {
 	 background(255);
 
 if(vkl) {
+
+	//РИСУНОК ДИАГРАММЫ(СТОЛБЫ)
+	 // noStroke();
+  /*for(var i=0;i<data.length; i++){
+  fill(bananacolor);
+  var creamht = height-90-(data[i].banana*50);
+  rect(140+i*80, creamht, 30, data[i].banana*50);
+  fill(mandarincolor);
+  rect(140+i*80, creamht-data[i].mandarin*50, 30, data[i].mandarin*50);
+  }	 */
+	
+	if(item=='банан') {
 //РИСУНОК КООРДИНАТ
   cupline(600-110);
   cupnum (600-110);
@@ -192,17 +256,6 @@ if(vkl) {
   text("= Банан", 1400-170, 35);
   text("= Мандарин", 1400-170, 65);
 	
-	//РИСУНОК ДИАГРАММЫ(СТОЛБЫ)
-	 // noStroke();
-  /*for(var i=0;i<data.length; i++){
-  fill(bananacolor);
-  var creamht = height-90-(data[i].banana*50);
-  rect(140+i*80, creamht, 30, data[i].banana*50);
-  fill(mandarincolor);
-  rect(140+i*80, creamht-data[i].mandarin*50, 30, data[i].mandarin*50);
-  }	 */
-	
-	if(item=='банан') {
   image(img1, 750, 50, 300, 300);
 	//банан
 	for (let index = 0; index < data.length; index++) {
@@ -222,6 +275,38 @@ noFill();
 	
     }
   else 	if(item=='мандарин') {
+//РИСУНОК КООРДИНАТ
+  cupline(600-110);
+  cupnum (600-110);
+  pplline(70);
+  pplnum (70);
+	
+//НАДПИСИ НАЗВАНИЙ ОСЕЙ КООРДИНАТ
+	  noStroke();
+	push();
+	textAlign(LEFT, CENTER);
+	text("С\nУ\nМ\nМ\nА\nР\nН\nЫ\nЕ", 20, 90);
+  text("П\nР\nО\nД\nА\nЖ\nИ\n", 20, 230);
+	text("З\nА", 20, 300);
+  	text("2\n0\n1\n8\n \nГ\nО\nД", 20, 390);
+
+	pop();
+  text("НОМЕР НЕДЕЛИ", 1400/2, 600-30);
+	
+	//НАДПИСИ В ПРАВОМ ВЕРХНЕМ УГЛУ
+	  stroke(0);
+  strokeWeight(1);
+  fill(bananacolor);
+  rect(1400-200, 20, 20, 20);
+  fill(mandarincolor);
+  rect(1400-200, 50, 20, 20);
+	
+		  //key
+  noStroke();
+  fill(0);
+  text("= Банан", 1400-170, 35);
+  text("= Мандарин", 1400-170, 65);
+	
 	//мандарин
 	  image(img2, 500, 100, 400, 300);
 		for (let index = 0; index < data.length; index++) {
@@ -240,7 +325,39 @@ noFill();
 	pop();
 	
   }
-  else {
+  else if(item=='оба товара') {
+//РИСУНОК КООРДИНАТ
+  cupline(600-110);
+  cupnum (600-110);
+  pplline(70);
+  pplnum (70);
+	
+//НАДПИСИ НАЗВАНИЙ ОСЕЙ КООРДИНАТ
+	  noStroke();
+	push();
+	textAlign(LEFT, CENTER);
+	text("С\nУ\nМ\nМ\nА\nР\nН\nЫ\nЕ", 20, 90);
+  text("П\nР\nО\nД\nА\nЖ\nИ\n", 20, 230);
+	text("З\nА", 20, 300);
+  	text("2\n0\n1\n8\n \nГ\nО\nД", 20, 390);
+
+	pop();
+  text("НОМЕР НЕДЕЛИ", 1400/2, 600-30);
+	
+	//НАДПИСИ В ПРАВОМ ВЕРХНЕМ УГЛУ
+	  stroke(0);
+  strokeWeight(1);
+  fill(bananacolor);
+  rect(1400-200, 20, 20, 20);
+  fill(mandarincolor);
+  rect(1400-200, 50, 20, 20);
+	
+		  //key
+  noStroke();
+  fill(0);
+  text("= Банан", 1400-170, 35);
+  text("= Мандарин", 1400-170, 65);
+	
     	//банан
 	for (let index = 0; index < data.length; index++) {
 	sensor.push(data[index].banana);
@@ -275,6 +392,29 @@ noFill();
 	}
 	pop();
   }
+	else {
+		textSize(30);
+text("Соотношение продаж фруктов и овощей за 2018 год", 200, 50);	
+	
+for (let j=0; j<data1.length;j++) {
+fill(data1[j].color);	
+arc(700, 350, 500, 500, radians(-data1[j].angle2), radians(-data1[j].angle1), PIE);
+fill("black");
+textSize(30);
+text(data1[j].percent, data1[j].x, data1[j].y);
+push();
+stroke(0);
+textSize(20);
+strokeWeight(1);
+fill(data1[j].color);
+rect(1400-200, 20+30*j, 20, 20);
+noStroke();
+  fill(0);
+  text("=" + data1[j].name, 1400-170, 35+30*j);
+	pop();
+}
+
+	}
 }	
 	
 }
