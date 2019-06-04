@@ -152,7 +152,7 @@ let data1 = [{
 	angle2: 73,
 	x: 800,
 	y: 250,
-	color: "lime"},
+	color: "pink"},
 
 {name: "Бананы",
 	percent: "13%",
