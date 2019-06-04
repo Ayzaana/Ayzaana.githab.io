@@ -2,6 +2,10 @@ let vkl=false;
 let banana;
 let mandarin;
 let item;
+let ind1=0;
+let ind2=0;
+let ind3=0;
+let ind4=0;
 
 let sensor = []; 
 let sensor2 = []; 
@@ -152,7 +156,7 @@ let data1 = [{
 	angle2: 73,
 	x: 800,
 	y: 250,
-	color: "pink"},
+	color: "lime"},
 
 {name: "Бананы",
 	percent: "13%",
@@ -203,7 +207,7 @@ function setup() {
 	  bananacolor = color( 300,400,100);
   mandarincolor = color( 250,0,0);
 	//	noFill(); // без заливки
-	frameRate(1); // 5 кадров в секунду
+	frameRate(10); // 5 кадров в секунду
 }
 
 
@@ -258,8 +262,12 @@ if(vkl) {
 	
   image(img1, 750, 50, 300, 300);
 	//банан
-	for (let index = 0; index < data.length; index++) {
+	/*for (let index = 0; index < data.length; index++) {
 	sensor.push(data[index].banana);
+    }*/
+      		if(ind1 < data.length) {
+	sensor.push(data[ind1].banana);
+			ind1++;
     }
 
 	beginShape();
@@ -309,8 +317,13 @@ noFill();
 	
 	//мандарин
 	  image(img2, 500, 100, 400, 300);
-		for (let index = 0; index < data.length; index++) {
+	/*	for (let index = 0; index < data.length; index++) {
 	sensor2.push(data[index].mandarin);
+    }*/
+    
+    		if(ind2 < data.length) {
+	sensor2.push(data[ind2].mandarin);
+			ind2++;
     }
 
 	beginShape();
@@ -359,8 +372,12 @@ noFill();
   text("= Мандарин", 1400-170, 65);
 	
     	//банан
-	for (let index = 0; index < data.length; index++) {
+	/*for (let index = 0; index < data.length; index++) {
 	sensor.push(data[index].banana);
+    }*/
+          		if(ind3 < data.length) {
+	sensor.push(data[ind3].banana);
+			ind3++;
     }
 
 	beginShape();
@@ -377,8 +394,12 @@ noFill();
     
 	//мандарин
 	
-		for (let index = 0; index < data.length; index++) {
+		/*for (let index = 0; index < data.length; index++) {
 	sensor2.push(data[index].mandarin);
+    }*/
+        		if(ind4 < data.length) {
+	sensor2.push(data[ind4].mandarin);
+			ind4++;
     }
 
 	beginShape();
