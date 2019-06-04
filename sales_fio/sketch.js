@@ -151,7 +151,7 @@ let data1 = [{
 	angle1: 0,
 	angle2: 73,
 	x: 800,
-	y: 200,
+	y: 250,
 	color: "lime"},
 
 {name: "Бананы",
@@ -159,15 +159,15 @@ let data1 = [{
 	angle1: 73,
 	angle2: 119,
 	x: 650,
-	y: 150,
+	y: 180,
 	color: "yellow"
 },
 {name: "Огурцы",
 	percent: "11%",
 	angle1: 119,
 	angle2: 160,
-	x: 550,
-	y: 200,
+	x: 530,
+	y: 240,
 	color: "green"
 },
 						 
@@ -175,8 +175,8 @@ let data1 = [{
 	percent: "9%",
 	angle1: 160,
 	angle2: 192,
-	x: 500,
-	y: 300,
+	x: 530,
+	y: 350,
 	color: "red"
 },
 {name: "Мандарин",
@@ -184,7 +184,7 @@ let data1 = [{
 	angle1: 192,
 	angle2: 220,
 	x: 550,
-	y: 380,
+	y: 420,
 	color: "orange"
 },
 {name: "Остальное",
@@ -192,7 +192,7 @@ let data1 = [{
 	angle1: 220,
 	angle2: 360,
 	x: 700,
-	y: 420,
+	y: 480,
 	color: "blue"
 }	];
 
@@ -393,27 +393,27 @@ noFill();
 	pop();
   }
 	else {
-		push();
-		textSize(30);
-text("Соотношение продаж фруктов и овощей за 2018 год", 200, 50);	
+	//	textSize(30);
+
 	
 for (let j=0; j<data1.length;j++) {
 fill(data1[j].color);	
 arc(700, 350, 500, 500, radians(-data1[j].angle2), radians(-data1[j].angle1), PIE);
-fill("black");
-textSize(30);
-text(data1[j].percent, data1[j].x, data1[j].y);
 push();
 stroke(0);
 textSize(20);
 strokeWeight(1);
+fill("black");
+//textSize(30);
+text(data1[j].percent, data1[j].x, data1[j].y);
+text("Соотношение продаж фруктов и овощей за 2018 год", 200, 50);	
 fill(data1[j].color);
 rect(1400-200, 20+30*j, 20, 20);
 noStroke();
   fill(0);
   text("=" + data1[j].name, 1400-170, 35+30*j);
 	pop();
-	pop();
+
 }
 
 	}
