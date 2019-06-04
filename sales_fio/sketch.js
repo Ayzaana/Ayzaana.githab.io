@@ -413,7 +413,7 @@ noStroke();
   fill(0);
   text("=" + data1[j].name, 1400-170, 35+30*j);
 	pop();
-	pop)_;
+	pop();
 }
 
 	}
